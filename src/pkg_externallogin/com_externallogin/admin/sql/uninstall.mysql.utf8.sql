@@ -1,6 +1,6 @@
 -- @package     External Login
 -- @subpackage  Component
--- @copyright   Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
+-- @copyright   Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
 -- @author      Christophe Demko
 -- @author      Ioannis Barounis
 -- @author      Alexandre Gandois
@@ -9,4 +9,6 @@
 
 DROP TABLE IF EXISTS `#__externallogin_servers`;
 DROP TABLE IF EXISTS `#__externallogin_users`;
+DROP TABLE IF EXISTS `#__externallogin_logs`;
+ALTER TABLE `#__users` DROP INDEX `idx_externallogin`;
 

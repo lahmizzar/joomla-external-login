@@ -3,7 +3,7 @@
 /**
  * @package     External Login
  * @subpackage  Component
- * @copyright   Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
+ * @copyright   Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
  * @author      Christophe Demko
  * @author      Ioannis Barounis
  * @author      Alexandre Gandois
@@ -61,6 +61,10 @@ class ExternalloginTableServer extends JTable
 			if (isset($this->params))
 			{
 				$this->params = new JRegistry($this->params);
+			}
+			else
+			{
+				$this->params = new JRegistry;
 			}
 			return true;
 		}

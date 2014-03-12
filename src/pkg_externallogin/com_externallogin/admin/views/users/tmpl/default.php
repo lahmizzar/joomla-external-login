@@ -3,7 +3,7 @@
 /**
  * @package     External Login
  * @subpackage  Component
- * @copyright   Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
+ * @copyright   Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
  * @author      Christophe Demko
  * @author      Ioannis Barounis
  * @author      Alexandre Gandois
@@ -17,6 +17,13 @@ defined('_JEXEC') or die;
 // load tooltip behavior
 JHtml::_('behavior.tooltip');
 ?>
+<script type="text/javascript">
+	function submitbutton(pressbutton) {
+		if (pressbutton) {
+			submitform(pressbutton);
+		}
+	}
+</script>
 <form action="<?php echo JRoute::_('index.php?option=com_externallogin&view=users'); ?>" method="post" name="adminForm" id="adminForm">
 	<?php echo $this->loadTemplate('filter');?>
 	<table class="adminlist">

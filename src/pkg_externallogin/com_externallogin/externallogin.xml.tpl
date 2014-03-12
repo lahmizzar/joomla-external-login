@@ -8,7 +8,7 @@
 	<author>Christophe Demko, Ioannis Barounis, Alexandre Gandois</author>
 	<authorEmail>externallogin@chdemko.com</authorEmail>
 	<authorUrl>http://www.chdemko.com</authorUrl>
-	<copyright>Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois.</copyright>
+	<copyright>Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html</license>
 
 	<!--  The version string is recorded in the extension table -->
@@ -64,16 +64,20 @@
 	<administration>
 		<!-- Administration Menu Section -->
 		<menu img="../media/com_externallogin/images/administrator/icon-16-externallogin.png">COM_EXTERNALLOGIN_MENU</menu>
-		<!--submenu>
+		<submenu>
 			<menu
 				view="users"
 				img="../media/com_externallogin/images/administrator/icon-16-users.png"
 			>COM_EXTERNALLOGIN_MENU_USERS</menu>
 			<menu
+				view="logs"
+				img="../media/com_externallogin/images/administrator/icon-16-logs.png"
+			>COM_EXTERNALLOGIN_MENU_LOGS</menu>
+			<menu
 				view="about"
 				img="../media/com_externallogin/images/administrator/icon-16-about.png"
 			>COM_EXTERNALLOGIN_MENU_ABOUT</menu>
-		</submenu-->
+		</submenu>
 
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
@@ -99,6 +103,8 @@
 			<folder>controllers</folder>
 			<!-- helpers files section -->
 			<folder>helpers</folder>
+			<!-- Logger files section -->
+			<folder>log</folder>
 		</files>
 
 		<languages folder="admin">

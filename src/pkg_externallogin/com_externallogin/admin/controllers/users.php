@@ -3,7 +3,7 @@
 /**
  * @package     External Login
  * @subpackage  Component
- * @copyright   Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
+ * @copyright   Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
  * @author      Christophe Demko
  * @author      Ioannis Barounis
  * @author      Alexandre Gandois
@@ -178,7 +178,7 @@ class ExternalloginControllerUsers extends JController
 
 			// Make sure the item ids are integers
 			JArrayHelper::toInteger($cid);
-var_dump($cid,$sid);die;
+
 			// Publish the items.
 			if (!$model->enableExternallogin($cid, $sid))
 			{
@@ -186,7 +186,7 @@ var_dump($cid,$sid);die;
 			}
 			else
 			{
-				$this->setMessage(JText::plural('COM_EXTERNALLOGIN_USERS_N_USERS_EXTERNALLOGIN_DISABLED', count($cid)));
+				$this->setMessage(JText::plural('COM_EXTERNALLOGIN_USERS_N_USERS_EXTERNALLOGIN_ENABLED', count($cid)));
 			}
 		}
 		$this->setRedirect(JRoute::_('index.php?option=com_externallogin&view=users', false));

@@ -3,7 +3,7 @@
 /**
  * @package    External Login
  * @subpackage Component
- * @copyright  Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
+ * @copyright  Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
  * @author     Christophe Demko
  * @author     Ioannis Barounis
  * @author     Alexandre Gandois
@@ -98,8 +98,8 @@ class ExternalloginViewServers extends JView
 			JToolBarHelper::trash('servers.trash');
 			JToolBarHelper::divider();
 		}
-		JToolBarHelper::custom('server.upload', 'users-upload', 'users-upload', 'COM_EXTERNALLOGIN_TOOLBAR_UPLOAD');
-		JToolBarHelper::custom('server.download', 'users-download', 'users-download', 'COM_EXTERNALLOGIN_TOOLBAR_DOWNLOAD');
+		JToolBarHelper::custom('server.upload', 'users-upload', 'users-upload', 'COM_EXTERNALLOGIN_TOOLBAR_SERVER_UPLOAD');
+		JToolBarHelper::custom('server.download', 'users-download', 'users-download', 'COM_EXTERNALLOGIN_TOOLBAR_SERVER_DOWNLOAD');
 		JToolBarHelper::divider();
 		JToolBarHelper::preferences('com_externallogin');
 		JToolBarHelper::divider();

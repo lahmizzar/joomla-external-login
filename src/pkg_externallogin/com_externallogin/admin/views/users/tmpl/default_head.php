@@ -3,7 +3,7 @@
 /**
  * @package     External Login
  * @subpackage  Component
- * @copyright   Copyright (C) 2008-2012 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
+ * @copyright   Copyright (C) 2008-2013 Christophe Demko, Ioannis Barounis, Alexandre Gandois. All rights reserved.
  * @author      Christophe Demko
  * @author      Ioannis Barounis
  * @author      Alexandre Gandois
@@ -40,7 +40,7 @@ $listDirn	= $this->escape($this->state->get('list.direction'));
 		<?php echo JText::_('COM_EXTERNALLOGIN_HEADING_JOOMLA'); ?>
 	</th>
 	<th width="5%">
-		<?php echo JHtml::_('grid.sort', 'JSTATUS', 's.published', $listDirn, $listOrder); ?>
+		<?php echo JText::_('COM_EXTERNALLOGIN_HEADING_EXTERNAL'); ?>
 	</th>
 	<th width="5%" class="nowrap">
 		<?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>

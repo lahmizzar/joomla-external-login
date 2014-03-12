@@ -3,7 +3,7 @@
 /**
  * @package     External Login
  * @subpackage  Community Builder External Login Plugin
- * @copyright   Copyright (C) 2008-2012 Christophe Demko. All rights reserved.
+ * @copyright   Copyright (C) 2008-2013 Christophe Demko. All rights reserved.
  * @author      Christophe Demko
  * @link        http://www.chdemko.com
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
@@ -78,7 +78,7 @@ class plgUserCbexternallogin extends JPlugin
 					$query->values((int) $user['id'] . ',' . (int) $user['id'] . ', 0, 0');
 				}
 				$dbo->setQuery($query);
-				$dbo->query();
+				$dbo->execute();
 			}
 		}
 		return true;
